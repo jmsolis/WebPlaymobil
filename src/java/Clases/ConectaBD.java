@@ -53,14 +53,22 @@ public class ConectaBD {
      
     public Connection conectar( int nMsj ){
         try {
+        /*
             Properties configura = new Properties();
-            configura.load(new FileReader("C:/test/config_bbdd.ini"));
+            configura.load(new FileReader("C:/test/configuracion.ini"));
             cIP = configura.getProperty("ip");
             cPuerto = configura.getProperty("puerto");
             cBBDD = configura.getProperty("bbdd");
             cUser = configura.getProperty("user");
             cPass = configura.getProperty("password");
             cDriver = configura.getProperty("driver");
+        */
+            cIP = "localhost";
+            cPuerto = "3306";
+            cBBDD = "bbdd_playmobil";
+            cUser = "root";
+            cPass = "";
+            cDriver = "com.mysql.cj.jdbc.Driver";
             cUrl ="jdbc:mysql://" + cIP + ":" + cPuerto + "/" + cBBDD + "?useSSL=false";
          } catch (Exception ex) {
         }

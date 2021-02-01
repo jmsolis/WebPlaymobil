@@ -19,7 +19,7 @@ public class Ventas {
     String descripcion;
     String fecha_vt;
     double precio_art;
-    int cantidad_art;
+    int und_venta;
     double total_linea;
 
     public int getId_venta() {
@@ -86,12 +86,12 @@ public class Ventas {
         this.precio_art = precio_art;
     }
 
-    public int getCantidad_art() {
-        return cantidad_art;
+    public int getUnd_venta() {
+        return und_venta;
     }
 
-    public void setCantidad_art(int cantidad_art) {
-        this.cantidad_art = cantidad_art;
+    public void setUnd_venta(int und_venta) {
+        this.und_venta = und_venta;
     }
 
     public double getTotal_linea() {
@@ -101,6 +101,8 @@ public class Ventas {
     public void setTotal_linea(double total_linea) {
         this.total_linea = total_linea;
     }
+
+   
     
     
 

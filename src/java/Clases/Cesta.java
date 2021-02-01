@@ -14,10 +14,9 @@ public class Cesta {
         int id_cliente;
         String nombre;
         int id_art;
-        String titulo;
         String descripcion;
         String foto;
-        int cantidad;
+        int und_cesta;
         double precio;
         double total_linea;
 
@@ -45,14 +44,6 @@ public class Cesta {
         this.id_art = id_art;
     }
 
-    public String getTitulo() {
-        return titulo;
-    }
-
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
-    }
-
     public String getDescripcion() {
         return descripcion;
     }
@@ -69,12 +60,12 @@ public class Cesta {
         this.foto = foto;
     }
 
-    public int getCantidad() {
-        return cantidad;
+    public int getUnd_cesta() {
+        return und_cesta;
     }
 
-    public void setCantidad(int cantidad) {
-        this.cantidad = cantidad;
+    public void setUnd_cesta(int und_cesta) {
+        this.und_cesta = und_cesta;
     }
 
     public double getPrecio() {
@@ -92,6 +83,9 @@ public class Cesta {
     public void setTotal_linea(double total_linea) {
         this.total_linea = total_linea;
     }
+
+    
+
    
             
 }  // FIn class

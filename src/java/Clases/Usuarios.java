@@ -12,10 +12,14 @@ package Clases;
 public class Usuarios {
             
         int id_user;
-        String nombre;
+        String usuario;
         String password;
+        String nombre;
         String direccion;
+        String telefono;
         String tipo_user;
+        int compras;
+        String email;
 
     public int getId_user() {
         return id_user;
@@ -25,12 +29,12 @@ public class Usuarios {
         this.id_user = id_user;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getUsuario() {
+        return usuario;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
     }
 
     public String getPassword() {
@@ -41,6 +45,14 @@ public class Usuarios {
         this.password = password;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
     public String getDireccion() {
         return direccion;
     }
@@ -49,12 +61,36 @@ public class Usuarios {
         this.direccion = direccion;
     }
 
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+
     public String getTipo_user() {
         return tipo_user;
     }
 
     public void setTipo_user(String tipo_user) {
         this.tipo_user = tipo_user;
+    }
+
+    public int getCompras() {
+        return compras;
+    }
+
+    public void setCompras(int compras) {
+        this.compras = compras;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
         

@@ -6,38 +6,45 @@
 package Clases;
 
 /**
- *
+ * Clase Articulos, aqui estan la definicion del objeto Articulos, usado en la aplicacion,
+ * con sus Getter y Setters definidos.
  * @author JuanMi
  */
 public class Articulos {
             
         int id_art;
-        String titulo;
         String descripcion;
         String foto;
         double precio;
-        int cantidad;
-
+        int stock;
+/**
+ * Codigo de articulo. 
+ * @return el codigo de articulo.
+ */
     public int getId_art() {
         return id_art;
     }
 
+ /**
+  * Codigo de articulo.
+  * @param id_art 
+  */  
     public void setId_art(int id_art) {
         this.id_art = id_art;
     }
 
-    public String getTitulo() {
-        return titulo;
-    }
-
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
-    }
-
+    /**
+     * Descripcion de articulo. 
+     * @return la descripcion del articulo
+     */
     public String getDescripcion() {
         return descripcion;
     }
-
+    
+/**
+ * Descripcion de articulo. 
+ * @param descripcion 
+ */
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
@@ -58,13 +65,14 @@ public class Articulos {
         this.precio = precio;
     }
 
-    public int getCantidad() {
-        return cantidad;
+    public int getStock() {
+        return stock;
     }
 
-    public void setCantidad(int cantidad) {
-        this.cantidad = cantidad;
+    public void setStock(int stock) {
+        this.stock = stock;
     }
 
+  
             
 }  // FIn class
